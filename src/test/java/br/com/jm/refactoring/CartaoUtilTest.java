@@ -1,5 +1,4 @@
 package br.com.jm.refactoring;
-
 import org.junit.Test;
 
 public class CartaoUtilTest {
@@ -7,7 +6,7 @@ public class CartaoUtilTest {
 
     @Test
     public void test(){
-        System.out.println("Início do teste");
+        System.out.println("InÃ­cio do teste");
         System.out.println(cartao.validar(CartaoUtil.VISA, "4567 4567 4567 4565", "03/2030"));
         System.out.println(cartao.validar(CartaoUtil.VISA, "4567 4567 4567 4563", "03/2030"));
         System.out.println(cartao.validar(CartaoUtil.MASTERCARD, "5567 4567 4567 4562", "03/2030"));
