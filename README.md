@@ -1,6 +1,9 @@
 ## InterviewTest
 
 This is a simple java project with several issues to help to interview tech candidates.
+The business logic is fine. This project has only technical issues.
+
+You'll have 1 hour to compile and refactory all that you can.
 
 ## How to use
 
