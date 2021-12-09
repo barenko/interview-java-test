@@ -12,3 +12,5 @@ This is a simple java project with several issues to help to interview tech cand
 4. Refactory the code (use your best efforts in this phase and speek while you are refactoring, to allow the interviewer knows what do you thinking)
 5. Run the tests again
 6. Have fun
+
+test
