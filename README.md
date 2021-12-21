@@ -17,27 +17,22 @@ You'll have 1 hour to compile and do all refactoring that you can to improve the
 > Prerequisites: JVM 11, Maven
 
 1. Clone this repo
-2. Run git checkout to `1h` or `30m`
+2. Run git checkout to `30m`
 3. Run the tests using terminal `mvn test` or your IDE
 4. Fix the issues
 5. Do the refactoring of the code (use your best efforts in this phase and speek while you are refactoring, to allow the interviewer knows what do you thinking)
 6. Run the tests again
 7. Commit all changes
-8. Create a git patch using the below commands:
+8. Create a git patch using the below command:
 
        git format-patch 30m -o patch
 
-   or
-
-       git format-patch 1h -o patch
-
    This will generate the patch folder in your project root.
 
-9. Send the patch folder zipped with your name and the test type (30m | 1h) to the interviews.
+9. Send the patch folder zipped with your name and the test type (30m) to the interviews.
 
    Examples:
    - ze-maria-30m.zip
-   - maria-jose-1h.zip
 
 10. Have fun
 
