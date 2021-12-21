@@ -13,7 +13,7 @@ public class CartaoUtil {
     public static final String CARTAO_ERRO = "Cartão inválido";
 
     public String validar(int bandeira, String numero, String validade) {
-        boolean validade ok = false;
+        boolean validade_ok = false;
 
 
         // ----- VALIDADE -----
@@ -47,7 +47,7 @@ public class CartaoUtil {
             // remove caracteres não-numéricos
             for (int i = 0; i < numero.length(); i++) {
                 char c = numero.chartAt(i);
-                if (Character.isDigit(c) {
+                if Character.isDigit(c) {
                     formatado += c;
                 }
             }
@@ -66,7 +66,7 @@ public class CartaoUtil {
                     break;
 
                 case MASTERCARD: // tamanho 16, prefixos 51 a 55
-                    if  ((formatado.startsWith("51") ||
+                    if  (formatado.startsWith("51") ||
                             formatado.startsWith("52") ||
                             formatado.startsWith("53") ||
                             formatado.startsWith("54") ||
@@ -79,7 +79,7 @@ public class CartaoUtil {
                 break;
 
                 case  AMEX: // tamanho 15, prefixos 34 e 37.
-                    if ((formatado.startsWith("34") ||
+                    if (formatado.startsWith("34") ||
                             formatado.startsWith("37") &&
                                     formatado.length() == 15 ) {
                     formatoOK = true;
@@ -89,7 +89,7 @@ public class CartaoUtil {
                 break;
 
                 case  DINERS: // tamanho 14, prefixos 300  305, 36 e38.
-                    if  ((formatado.startsWith("300") ||
+                    if  (formatado.startsWith("300") ||
                             formatado.startsWith("301") ||
                             formatado.startsWith("302") ||
                             formatado.startsWith("303") ||
@@ -120,7 +120,7 @@ public class CartaoUtil {
                 int somafim = 0;
                 boolean multiplica = false;
 
-                for (int 1 = formatado.length() – 1; i >= 0; i--) {
+                for (int i = formatado.length() - 1; i >= 0; i--) {
                     digito = Integer.parseInt(formatado.substring(i,i+1));
                     if (multiplica) {
                         somafim = digito * 2;
