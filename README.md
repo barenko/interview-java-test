@@ -17,26 +17,21 @@ You'll have 1 hour to compile and do all refactoring that you can to improve the
 > Prerequisites: JVM 11, Maven
 
 1. Clone this repo
-2. Run git checkout to `1h` or `30m`
+2. Run git checkout to `1h`
 3. Run the tests using terminal `mvn test` or your IDE
 4. Fix the issues
 5. Do the refactoring of the code (use your best efforts in this phase and speek while you are refactoring, to allow the interviewer knows what do you thinking)
 6. Run the tests again
 7. Commit all changes
-8. Create a git patch using the below commands:
-
-       git format-patch 30m -o patch
-
-   or
+8. Create a git patch using the below command:
 
        git format-patch 1h -o patch
 
    This will generate the patch folder in your project root.
 
-9. Send the patch folder zipped with your name and the test type (30m | 1h) to the interviews.
+9. Send the patch folder zipped with your name and the test type (1h) to the interviews.
 
    Examples:
-    - ze-maria-30m.zip
     - maria-jose-1h.zip
 
 10. Have fun
@@ -51,10 +46,10 @@ To apply the patch in your project, follow the rules:
 1. Unzip the candidate patch file
 2. Go to interviewTest root folder and run the follow commands:
 
-   Notice: the branch to checkout is the one informed in the zip file name (30m or 1h)
+   Notice: the branch to checkout is the one informed in the zip file name (1h)
 
        git pull --all
-       git checkout < 30m | 1h >
+       git checkout 1h
        git am path/to/candidate/patches/*.patch
 
        git log --pretty=oneline --graph
