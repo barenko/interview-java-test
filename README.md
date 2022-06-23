@@ -3,7 +3,7 @@
 This is a simple java project with several issues to help to interview tech candidates.
 The business logic is fine. This project has only technical issues.
 
-You'll have 1 hour to compile and do all refactoring that you can to improve the code legibility and maintenance.
+You'll have 30m to compile and do all refactoring that you can to improve the code legibility and maintenance.
 
 **Caution**: To your delivery the follow itens are mandatory:
 - The code must compile
